@@ -1,6 +1,13 @@
 Simple Config Library
 ---------------------
 
+[![npm package](https://nodei.co/npm/better-config.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/better-config/)
+
+[![Build status](https://img.shields.io/travis/diamondio/better-config.svg?style=flat-square)](https://travis-ci.org/diamondio/better-config)
+[![Dependency Status](https://img.shields.io/david/diamondio/better-config.svg?style=flat-square)](https://david-dm.org/diamondio/better-config)
+[![Known Vulnerabilities](https://snyk.io/test/npm/better-config/badge.svg?style=flat-square)](https://snyk.io/test/npm/better-config)
+[![Gitter](https://img.shields.io/badge/gitter-join_chat-blue.svg?style=flat-square)](https://gitter.im/diamondio/better-config?utm_source=badge)
+
 This is a simple config library for use in NodeJS. Get started with:
 
 ```bash
