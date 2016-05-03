@@ -6,17 +6,11 @@ function Config(opts) {}
 
 function _getCallerFile() {
   try {
-    var err = new Error();
-    var callerfile;
-    var currentfile;
-
-    Error.prepareStackTrace = function (err, stack) { return stack; };
-    currentfile = err.stack.shift().getFileName();
-
-    while (err.stack.length) {
-      callerfile = err.stack.shift().getFileName();
-      if(currentfile !== callerfile) return callerfile;
-    }
+    var oldPrepareStackTrace = Error.prepareStackTrace;
+    Error.prepareStackTrace = function(err, stack) { return stack; };
+    var stack = new Error().stack;
+    Error.prepareStackTrace = oldPrepareStackTrace;
+    return stack[2].getFileName()
   } catch (err) {}
   return undefined;
 }
