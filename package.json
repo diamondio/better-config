@@ -1,0 +1,35 @@
+{
+  "name": "better-config",
+  "version": "1.0.0",
+  "description": "Config loader and defaults manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diamondio/better-config.git"
+  },
+  "keywords": [
+    "config",
+    "loader",
+    "defaults",
+    "json",
+    "configuration",
+    "preferences",
+    "settings"
+  ],
+  "author": "Diamond Inc. <ops@diamond.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diamondio/better-config/issues"
+  },
+  "homepage": "https://github.com/diamondio/better-config",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "deep-extend": "^0.4.1",
+    "lodash": "^4.11.2"
+  }
+}
