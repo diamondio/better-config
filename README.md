@@ -1,0 +1,2 @@
+# better-config
+Better config
