@@ -25,7 +25,7 @@ Config.prototype.set = function (opts, val) {
   if (typeof opts === 'object') {
     extend(this, opts);
   } else if (typeof opts === 'function') {
-    extend(this, module(this));
+    extend(this, opts(this));
   } else if (typeof opts === 'string') {
     try {
       var callerFile = _getCallerFile();
