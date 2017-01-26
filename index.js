@@ -15,7 +15,7 @@ function _getCallerFile() {
   return undefined;
 }
 
-Config.prototype.set = function (opts, val) {
+Config.prototype.set = function (opts, silent) {
   if (typeof opts === 'object') {
     extend(this, opts);
   } else if (typeof opts === 'function') {
@@ -27,7 +27,9 @@ Config.prototype.set = function (opts, val) {
       var module = require(moduleFile);
       this.set(module)
     } catch (e) {
-      console.log(e)
+      if (!silent) { 
+        console.log(e)
+      }
     }
   }
 }
