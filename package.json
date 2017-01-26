@@ -1,6 +1,6 @@
 {
   "name": "better-config",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Config loader and defaults manager",
   "main": "index.js",
   "scripts": {
