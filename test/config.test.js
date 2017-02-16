@@ -13,6 +13,11 @@ describe('setting', function () {
     assert.equal(config.y, 2);
   })
   
+  it('should set by json 5', function () {
+    config.set('./fixtures/config.json5');
+    assert.equal(config.y, 2);
+  })
+  
   it('should set by js', function () {
     config.set('./fixtures/defaults.js');
     assert.equal(config.z, 3);

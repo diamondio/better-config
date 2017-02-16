@@ -1,6 +1,7 @@
 var _ = require('lodash');
 var path = require('path');
 var extend = require('deep-extend');
+require('json5/lib/require');
 
 function Config(opts) {}
 
