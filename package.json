@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/diamondio/better-config",
   "devDependencies": {
+    "json5": "^0.5.1",
     "mocha": "^2.4.5"
   },
   "dependencies": {
     "deep-extend": "^0.4.1",
-    "json5": "^0.5.1",
     "lodash": "^4.11.2"
   }
 }
